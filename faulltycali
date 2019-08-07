@@ -1,0 +1,38 @@
+print("Welcome to faulty calculator...\n Do you want to calculate anything. \n Press 'Y' for 'Yes'\n press 'N' for 'No'")
+choice=input()
+if(choice=='N'):
+    print("Thanks for using our calculator...")
+elif(choice!='N' and choice!='Y'):
+    print("Invalid keyword.")
+    print("Do You Want to Continue? \n Press 'Y' for 'Yes'\n press 'N' for 'No'")
+    choice=input()
+if(choice=='Y'):
+    while (choice == 'Y'):
+        Operator = input("Enter your operator")
+        firstNumber = int(input("Enter Your First Number"))
+        secondNumber = int(input("Enter Your Second Number"))
+        if (Operator == '+' and firstNumber == 9 and  secondNumber == 56 or Operator == "+" and firstNumber == 56 and secondNumber == 9):
+            print(firstNumber, Operator, secondNumber, '=', 77)
+        elif (Operator == "*" and firstNumber == 45 and secondNumber == 3 or Operator == "*" and  firstNumber == 3 and secondNumber == 45):
+            print(firstNumber, Operator, secondNumber, '=', 555)
+        elif (Operator == "/" and firstNumber == 6 and  secondNumber == 56 or Operator == "/" and firstNumber == 56 and secondNumber == 6):
+            print(firstNumber, Operator, secondNumber, '=', 4)
+        elif (Operator == '+'):
+            print(firstNumber, Operator, secondNumber, '=', firstNumber + secondNumber)
+        elif (Operator == '*'):
+            print(firstNumber, Operator, secondNumber, '=', firstNumber * secondNumber)
+        elif (Operator == '/'):
+            print(firstNumber, Operator, secondNumber, '=', firstNumber / secondNumber)
+        else:
+            print("Invalid Entry...")
+        print("Do you want to continue.?\n Press 'Y' for 'Yes'\n press 'N' for 'No'")
+        choice = input()
+        if(choice=='Y'): 
+            continue
+        elif(choice=='N'):
+            print("Thanks for using faulty calculator...")
+            break
+        else:
+            print("Invalid Keyword.")
+
+
